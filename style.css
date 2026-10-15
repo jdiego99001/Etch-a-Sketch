@@ -1,24 +1,41 @@
 #container {
+    display: flex;
+    flex-direction: column;
+    height: 960px;
+    width: 960px;
+    box-sizing: content-box;
     border: 4px solid black;
-    justify-content: center;
-}
-
-.cuadricula {
-    margin: 1.5px;
-    height: 50px;
-    width: 50px;
-    background-color: aqua;
-    transform: scale(1);
-    transition: background-color 7s ease;
     
 }
 
-.cuadricula:hover {
-    background-color: blueviolet;
-    transition: background-color 0.3s ease;
+.cuadricula {
+    display: flex;
+    flex: auto;
+    background-color: aqua;
+    transition: 1s;
+    aspect-ratio: 1 / 1; 
 }
 
 .row {
     display: flex;
     justify-content: center;
+}
+
+#button {
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    width: 140px;
+    font-size: 20px;
+    border-radius: 0%;
+    border: 1px solid black;
+    background-color:gray;
+    color: white;
+    margin: 2%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
